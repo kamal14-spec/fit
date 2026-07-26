@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIT | Gym & Fitness</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:#fff;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:800;
+    color:#ff3c00;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff3c00;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:65px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#ff3c00;
+}
+
+.hero p{
+    color:#ddd;
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 40px;
+    background:#ff3c00;
+    color:#fff;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(255,60,0,.4);
+}
+
+section{
+    padding:90px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#181818;
+    padding:35px;
+    border-radius:18px;
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#222;
+}
+
+.card h3{
+    color:#ff3c00;
+    margin-bottom:15px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.about p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+    text-align:center;
+}
+
+.stat{
+    background:#181818;
+    padding:30px;
+    border-radius:15px;
+}
+
+.stat h2{
+    color:#ff3c00;
+    font-size:42px;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    background:#111;
+    color:#aaa;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:10px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.title{
+    font-size:32px;
+}
+
+.about h2{
+    font-size:32px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">FIT</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#stats">Results</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>BUILD YOUR <span>BEST BODY</span></h1>
+
+<p>
+Train with expert coaches, modern equipment, and personalized workout plans.
+Join FIT today and start your transformation.
+</p>
+
+<a href="#services" class="btn">Join Now</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💪 Strength Training</h3>
+<p>Professional weight training programs for beginners and athletes.</p>
+</div>
+
+<div class="card">
+<h3>🏃 Cardio Zone</h3>
+<p>Latest treadmills, cycles, rowing machines, and HIIT workouts.</p>
+</div>
+
+<div class="card">
+<h3>🥗 Nutrition Plan</h3>
+<p>Customized meal plans to help you gain muscle or lose fat faster.</p>
+</div>
+
+<div class="card">
+<h3>🧘 Personal Coaching</h3>
+<p>One-on-one guidance from certified fitness experts.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80">
+
+<div>
+
+<h2>Why Choose FIT?</h2>
+
+<p>
+FIT combines premium equipment, experienced trainers, and motivating workout
+programs to help you reach your fitness goals. Whether you want to lose weight,
+build muscle, or improve endurance, we provide everything you need under one roof.
+</p>
+
+<a href="#" class="btn">Start Today</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="stats">
+
+<h2 class="title">Our Achievements</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h2 class="counter" data-target="5000">0</h2>
+<p>Members</p>
+</div>
+
+<div class="stat">
+<h2 class="counter" data-target="25">0</h2>
+<p>Certified Trainers</p>
+</div>
+
+<div class="stat">
+<h2 class="counter" data-target="12">0</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="stat">
+<h2 class="counter" data-target="98">0</h2>
+<p>Success Rate %</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>FIT</h2>
+
+<p>Train Hard • Stay Strong • Live Healthy</p>
+
+<br>
+
+<p>© 2026 FIT Gym. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+const counters=document.querySelectorAll(".counter");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+let counter=entry.target;
+let target=+counter.dataset.target;
+let count=0;
+
+let update=()=>{
+
+count+=Math.ceil(target/100);
+
+if(count<target){
+
+counter.innerText=count;
+requestAnimationFrame(update);
+
+}else{
+
+counter.innerText=target;
+
+}
+
+}
+
+update();
+
+}
+
+})
+
+});
+
+counters.forEach(counter=>observer.observe(counter));
+
+</script>
+
+</body>
+</html>
